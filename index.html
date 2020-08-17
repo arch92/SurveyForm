@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/survey.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Survey Form</h1>  
+      <p id="description">Help us to improve by filling this Survey Form</p>
+        </header>
+        <main>
+        <form id="survey-form"> 
+            <section id="survey-fields">
+            <label for="name" id="name-label">Name: </label> 
+            <input type="text" id="name" placeholder="Enter your name" required/> 
+            <label for="email" id="email-label">Email: </label> 
+            <input type="email" id="email" placeholder="Enter your email" required/> 
+            <label for="number" id="number-label">Age: </label> 
+            <input type="number" id="number" placeholder="Enter your age" min=1 max=120 required/> 
+
+            <label for="dropdown">Which Option best describes your current role?</label> 
+            <select id="dropdown">
+                <option value="" disabled selected>select an option</option>
+                <option value="student">Student</option>
+                <option value="full-time-job">Full Time Job</option>
+                <option value="full-time-learner">Full Time Learner</option>
+                <option value="prefer-not">Prefer Not to say</option>
+                <option value="other">Other</option>
+            </select></br>
+
+            <label for="recommend">Would you recommend feecodecamp to a friend?</label> 
+            <fieldset id="recommend">
+            <label for="definitely"><input name="recommend" id="definitely" type="radio" value="definitely" required></input>Definitely</label>
+            <label for="maybe"><input name="recommend" id="maybe" type="radio" value="maybe" required></input>May Be</label>
+            <label for="notsure"><input name="recommend" id="notsure" type="radio" value="notsure" required></input>Not Sure</label>
+            </fieldset> 
+
+            <label for="improve">What would you like to see improved?</label> 
+            <fieldset id="improve">
+                <legend><em>Check all that apply</em></legend>
+            <label for="front-end"><input type="checkbox" id="front-end" name="improve" value="front-end">Front-End Projects</label>
+            <label for="back-end"><input type="checkbox" id="back-end" name="improve" value="back-end">Back-End Projects</label>
+            <label for="dv"><input type="checkbox" id="dv" name="improve" value="dv">Data Visualization</label>
+            <label for="challenges"><input type="checkbox" id="challenges" name="improve" value="challenges">Challenges</label>
+            <label for="opsc"><input type="checkbox" id="opsc" name="improve" value="opsc">Open Source Community</label>
+            <label for="Ghr"><input type="checkbox" id="Ghr" name="improve"value="Ghr">Gitter help rooms</label>
+            <label for="videos"><input type="checkbox" id="videos" name="improve" value="videos">Videos</label>
+            <label for="cm"><input type="checkbox" id="cm" name="improve" value="cm">City Meetups</label>
+            <label for="wiki"><input type="checkbox" id="wiki" name="improve" value="wiki" >Wiki</label>
+            <label for="forum"><input type="checkbox" id="forum" name="improve" value="forum" >Forum</label>
+            <label for="ac"><input type="checkbox" id="ac" name="improve" value="ac">Additional Courses</label>
+            </fieldset>
+        </br>
+            <label for="comments">Any Comments or Suggestions?</label> 
+            <textarea id="comments" placeholder="enter a comment"></textarea> 
+
+            <label for="submit"><button type="submit" id="submit" name="submit">Submit</label>
+        </section>
+        </form>
+    </main>
+    </body>
+</html>

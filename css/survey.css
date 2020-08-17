@@ -1,0 +1,176 @@
+body{
+    background-color: blueviolet;
+    margin: 10% 20% 10% 20%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: "Raleway", Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: white;
+  margin: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+@media (max-width: 400px) {
+    body {
+      font-size: 13px;
+    }
+  }
+  h1{
+      margin-bottom: 5px;
+      font-weight: 400;
+  line-height: 1.2;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+  
+  h1,
+  p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+
+
+  header {
+   
+    width: 100%;
+    z-index: 1;
+    top: 0%;
+    padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+  text-align: center;
+  }
+
+  #description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  }
+  
+  
+  body {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+  }
+  
+  @media (min-width: 576px) {
+    body {
+      max-width: 540px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    body {
+      max-width: 720px;
+    }
+  }
+
+  form {
+    background: darkblue;
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+  }
+  @media (min-width: 480px) {
+    form {
+      padding: 2.5rem;
+    }
+  }
+  
+
+
+#survey-form{
+    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+
+}
+
+#survey-fields {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-gap: 10px;
+    border-radius: 0.25rem;
+  }
+ 
+  label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  input,
+  button,
+  select,
+  textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0;
+    min-width: 100%;
+  }
+  @media (max-width: 600px) {
+    #survey-fields {
+      grid-template-columns: 1fr;
+    }
+    label {
+      text-align: left;
+    }
+  }
+  
+#submit {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: green;
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
